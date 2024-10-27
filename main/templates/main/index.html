@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>GamaGama предлагает своим посетителям свежие новости из мира видеоигр, а также обзоры, анонсы и рецензии на новые релизы. Платформа ориентирована на широкий круг геймеров, предоставляя информацию о последних событиях в индустрии, включая новости о консольных играх и ПК-играх.</p>
+        <!--<button class="btn btn-warning">На страницу про нас</button>-->
+        <button class="btn btn-warning" href="{% url 'about' %}">На страницу про нас</button>
+        
+
+        <!--{% for el in values %} 
+            {% if el == 'Hello' %}
+                {% filter lower %}
+                <p>{{ el }}</p>
+                 {% endfilter %}
+            {% endif %}
+        {% endfor %}    
+
+        {% for el in obj %}
+            <p>{{ el }}</p>
+        {% endfor %}  тест -->
+    </div>
+{% endblock %}
